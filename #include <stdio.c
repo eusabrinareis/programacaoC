@@ -1,33 +1,38 @@
 #include <stdio.h>
-int main (){
-    /*
-    Atribuição Simples (=)
-    Atribuição com Soma (+=)
-    Atribuição com Subtração (-=)
-    Atribuição com Multiplicação (*=)
-    Atribuição com Divisão(/=)
-    */
-    int numero1 = 10, numero2, resultado;
-    
-    resultado= 10;
-    printf("Resultado: %d\n", resultado);
-    
-    //resultado= resultado + 20;
-    resultado += 20;
-    printf("Resultado: %d\n", resultado);
-    
-    //resultado = resultado - numero1;
-    resultado -= numero1;
-    printf("Resultado: %d\n", resultado);
-    
-    //resultado = resultado * 5
-    resultado *= 5;
-    printf("Resultado: %d\n", resultado);
-    
-    //resultado = resultado  / 2
-    resultado /= 2;
-    printf("Resultado: %d\n", resultado);
-    
-    
 
-}
+    int main(){
+        /*
+        Incremento (++)
+        Pré-Incremento ++a
+        Pós-Incremento a++
+        Decremento (--)
+        Pré-Decremento --a
+        Pós-Decremento a-- 
+        */
+
+    int numero1 = 1, resultado;
+
+    printf("Antes incremento: %d\n", numero1);
+    //numero1 = numero1 +1;
+    //numero1 += 1;
+    //Pos incremento:
+    //resultado = numero1;
+    //numero++;
+    resultado = numero1++;
+   //printf("Após incremento: %d\n", numero1);
+   printf("Após o Pós-incremento - numero 1: %d - Resultado: %d\n", numero1, resultado);
+
+   resultado = ++numero1;
+     printf("Após o Pré-incremento - numero 1: %d - Resultado: %d\n", numero1, resultado);
+
+    //numero1 = numero1 - 1; 
+    //numero1 -= 1;   
+//    numero1--;
+//    printf("Apos decremento: %d\n", numero1,);    
+     resultado = numero1 --;
+     printf("Após o Pós-decremento - numero 1: %d - Resultado: %d\n", numero1, resultado);
+
+     resultado = --numero1;
+     printf("Após o Pré-decremento - numero 1: %d - Resultado: %d\n", numero1, resultado);
+
+    }
